@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-BR" data-color-scheme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BTS — Fan Hub Acessível</title>
+  <meta name="description" content="Site acessível sobre o BTS: história, membros, discografia resumida e iniciativas. Tema inspirado em cores e estética BTS, com foco em acessibilidade.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo" role="banner">
+    <div class="container header-grid">
+      <a class="logo" href="./" aria-label="Página inicial BTS Fan Hub">
+        <img src="img/logo.svg" alt="BTS Fan Hub — logo">
+      </a>
+
+      <button id="botao-menu" class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="menu-principal" class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#membros">Membros</a></li>
+          <li><a href="#discografia">Discografia</a></li>
+          <li><a href="#acessibilidade">Acessibilidade</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="acoes">
+        <button id="tema-toggle" class="btn" aria-pressed="false" aria-label="Alternar tema claro/escuro">Alternar tema</button>
+        <a class="btn primario" href="#contato" id="abrir-contato">Fale com a gente</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="titulo-hero">BTS — Fan Hub Acessível</h1>
+          <p>Um site temático sobre a trajetória do BTS, seus membros, música e impacto cultural — desenvolvido com cuidado para acessibilidade.</p>
+          <p><a class="btn primario" href="#sobre">Conhecer a história</a></p>
+        </div>
+        <figure class="hero-fig">
+          <img src="img/hero.svg" alt="Ilustração estilizada dos 7 membros do BTS">
+        </figure>
+      </div>
+    </section>
+
+    <section id="sobre" aria-labelledby="titulo-sobre" class="bloco destaque">
+      <div class="container">
+        <h2 id="titulo-sobre">Breve história</h2>
+        <p>Formado em 2013 pela Big Hit Entertainment (agora HYBE), o BTS começou como um grupo de K-pop com forte participação no processo criativo — escrevendo e produzindo músicas que falam sobre juventude, saúde mental e empatia. Ao longo dos anos, o BTS alcançou sucesso global, que inclui prêmios internacionais, turnês mundiais e iniciativas sociais como campanhas de conscientização e doações.</p>
+        <p>Este site é uma homenagem informativa, não oficial, feita por fãs e construída para ser acessível a todo público.</p>
+      </div>
+    </section>
+
+    <section id="membros" aria-labelledby="titulo-membros" class="bloco">
+      <div class="container">
+        <h2 id="titulo-membros">Membros (resumo)</h2>
+        <ul class="cards" role="list">
+          <li class="card">
+            <h3>RM</h3>
+            <p>Líder e rapper principal, também conhecido por suas contribuições como compositor e poliglota.</p>
+          </li>
+          <li class="card">
+            <h3>Jin</h3>
+            <p>Vocal, conhecido pelo timbre e presença de palco.</p>
+          </li>
+          <li class="card">
+            <h3>Suga</h3>
+            <p>Rapper e produtor, traz letras que exploram emoções e experiências pessoais.</p>
+          </li>
+          <li class="card">
+            <h3>J-Hope</h3>
+            <p>Dançarino e rapper, conhecido pela energia e habilidades coreográficas.</p>
+          </li>
+          <li class="card">
+            <h3>Jimin</h3>
+            <p>Vocal e dançarino com performances emocionalmente expressivas.</p>
+          </li>
+          <li class="card">
+            <h3>V</h3>
+            <p>Vocal com timbre único e abordagem artística marcante.</p>
+          </li>
+          <li class="card">
+            <h3>Jungkook</h3>
+            <p>Vocal principal, multi-instrumentista e frequentemente destaque nas composições.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="discografia" aria-labelledby="titulo-discografia" class="bloco destaque">
+      <div class="container">
+        <h2 id="titulo-discografia">Discografia (seleção)</h2>
+        <ul class="lista-discos" role="list">
+          <li><strong>Dark & Wild</strong> — 2014 (álbuns iniciais e evolução do som)</li>
+          <li><strong>The Most Beautiful Moment in Life</strong> — 2015–2016 (temas sobre juventude)</li>
+          <li><strong>Wings</strong> — 2016 (exploração artística e popularização)</li>
+          <li><strong>Love Yourself</strong> — 2017–2018 (mensagens de aceitação)</li>
+          <li><strong>Map of the Soul</strong> — 2019–2020 (inspirações psicológicas)</li>
+          <li><strong>BE</strong> — 2020 (resposta à pandemia, intimidade e reflexão)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="acessibilidade" aria-labelledby="titulo-acess" class="bloco">
+      <div class="container">
+        <h2 id="titulo-acess">Acessibilidade no site</h2>
+        <ul class="checklist" role="list">
+          <li>Pular para o conteúdo (skip link) e HTML semântico.</li>
+          <li>Modo alto contraste e alternância de tema com persistência.</li>
+          <li>Navegação por teclado, foco visível e ordens lógicas.</li>
+          <li>Suporte a preferências do usuário: <code>prefers-reduced-motion</code> e <code>prefers-color-scheme</code>.</li>
+          <li>Formulários com rótulos, validação e feedback acessível.</li>
+          <li>Imagens com <code>alt</code> descritivo ou <code>alt=""</code> quando decorativas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" aria-labelledby="titulo-contato" class="bloco">
+      <div class="container">
+        <h2 id="titulo-contato">Contato & Newsletter</h2>
+
+        <form id="form-contato" novalidate>
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required>
+            <small id="erro-nome" class="erro" aria-live="polite"></small>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <small id="erro-email" class="erro" aria-live="polite"></small>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem ou sugestão</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <small id="erro-mensagem" class="erro" aria-live="polite"></small>
+          </div>
+
+          <button class="btn primario" type="submit">Enviar</button>
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>BTS Fan Hub — Acessível</strong></p>
+      <p>Site feito por fã — conteúdo não oficial.</p>
+      <ul class="social" role="list">
+        <li><a href="#" aria-label="Instagram dos fãs">Instagram</a></li>
+        <li><a href="#" aria-label="Twitter dos fãs">Twitter</a></li>
+        <li><a href="#" aria-label="YouTube">YouTube</a></li>
+      </ul>
+      <p><small>&copy; <span id="ano"></span> BTS Fan Hub. Conteúdo para fins educativos e de fã.</small></p>
+    </div>
+  </footer>
+
+  <dialog id="dialog-news" aria-labelledby="titulo-news">
+    <form method="dialog" class="modal">
+      <h2 id="titulo-news">Inscreva-se na newsletter</h2>
+      <p>Receba atualizações e novidades (simulação).</p>
+      <div class="campo">
+        <label for="nw-email">E-mail</label>
+        <input id="nw-email" type="email" required>
+      </div>
+      <menu class="modal-acoes">
+        <button value="cancel">Cancelar</button>
+        <button class="primario" value="confirm">Inscrever</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
